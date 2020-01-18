@@ -28,24 +28,9 @@
             src="https://www.oddbit.id/_/theme/logo_green.png"
             alt="logo"
           />
-          <a href="#" class="brand-logo grey-text text-darken-2">
+          <a href="/" class="brand-logo grey-text text-darken-2">
             OddBit Test</a
           >
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li>
-              <a class="grey-text text-darken-2" href="sass.html">Sass</a>
-            </li>
-            <li>
-              <a class="grey-text text-darken-2" href="badges.html"
-                >Components</a
-              >
-            </li>
-            <li>
-              <a class="grey-text text-darken-2" href="collapsible.html"
-                >JavaScript</a
-              >
-            </li>
-          </ul>
         </div>
       </nav>
     </div>
@@ -75,12 +60,24 @@
         </div>
       </div>
       <div class="row">
-        <div class="col s12 m4 offset-m2">
-          <input type="text" class="datepicker start" />
-        </div>
-        <div class="col s12 m4">
-          <input type="text" class="datepicker end" />
-        </div>
+        <form>
+          <div class="col s12 m4 offset-m1">
+            <input type="text" class="datepicker" name="start" />
+          </div>
+          <div class="col s12 m4">
+            <input type="text" class="datepicker" name="end" />
+          </div>
+          <div class="s12 m4">
+            <button
+              class="btn waves-effect waves-light btn-flat"
+              type="submit"
+              name="action"
+            >
+              Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
       </div>
       <div class="row" id="caption"></div>
       <div class="row" id="results"></div>
@@ -92,7 +89,9 @@
     <script>
       document.addEventListener("DOMContentLoaded", function() {
         var elems = document.querySelectorAll(".datepicker");
-        var instances = M.Datepicker.init(elems, { format: "yyyy-mm-dd" });
+        var instances = M.Datepicker.init(elems, {
+          format: "yyyy-mm-dd"
+        });
       });
     </script>
   </body>
