@@ -1,0 +1,39 @@
+a.sort {
+  width: 100% !important;
+  margin: 1rem auto;
+  border: 1px solid #d3d3d39d;
+  border-radius: 5px;
+}
+
+.card {
+  margin: 1rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 10px 10px 0px -2px rgba(231, 235, 101, 1);
+  -moz-box-shadow: 10px 10px 0px -2px rgba(231, 235, 101, 1);
+  box-shadow: 10px 10px 0px -2px rgba(231, 235, 101, 1);
+}
+
+.navbar-fixed {
+  margin-bottom: 1rem;
+}
+
+.card-reveal::-webkit-scrollbar-thumb,
+.card-reveal::-webkit-scrollbar-thumb {
+  background: rgb(102, 102, 102);
+}
+.card-reveal::-webkit-scrollbar-track,
+.card-reveal::-webkit-scrollbar-track {
+  background: #ddd;
+}
+.card-reveal::-webkit-scrollbar,
+.card-reveal::-webkit-scrollbar {
+  width: 3px;
+}
+
+input[type="text"].datepicker {
+  border: 1px solid #d3d3d39d;
+  border-radius: 5px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  height: 2.4rem;
+}
