@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+
     <link rel="stylesheet" href="./style.css" />
 
     <!--Import Google Icon Font-->
@@ -31,6 +32,19 @@
           <a href="/" class="brand-logo grey-text text-darken-2">
             OddBit Test</a
           >
+          <ul class="right">
+            <li>
+              <a class="grey-text text-darken-2 thumb" data-control="thumb"
+                ><i class="material-icons toggle-icon"></i
+              ></a>
+            </li>
+
+            <li>
+              <a class="grey-text text-darken-2" href="/"
+                ><i class="material-icons">refresh</i></a
+              >
+            </li>
+          </ul>
         </div>
       </nav>
     </div>
@@ -94,15 +108,7 @@
     </div>
 
     <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-        var elems = document.querySelectorAll(".datepicker");
-        var instances = M.Datepicker.init(elems, {
-          format: "yyyy-mm-dd"
-        });
-      });
-    </script>
   </body>
 </html>
